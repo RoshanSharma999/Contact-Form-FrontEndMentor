@@ -1,1 +1,1 @@
-# Contact-Form-FrontEndMentor
+This project is a solution to a challenge provided by FrontEnd Mentor. While the design template and resources (such as design files and assets) were supplied by FrontEnd Mentor, all the coding, implementation, and functionality have been completed by me. This project showcases my ability to accurately translate a given design into a fully functional and responsive website.
