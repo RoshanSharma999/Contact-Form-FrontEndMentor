@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --lgreen: hsl(148, 38%, 91%);
+    --dgreen: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --lgrey: hsl(186, 15%, 59%);
+    --dgrey: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--lgreen);
+    padding: 10vh 5%;
+    color: var(--dgrey);
+    font-family: "Karla", sans-serif;
+}
+
+#contact-form {
+    /* display: none; */
+    background-color: white;
+    margin: 0px auto;
+    max-width: 700px;
+    padding: 30px 0px;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0px 30px;
+    color: black;
+}
+
+#form-grid {
+    margin: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
+    grid-gap: 20px 20px;
+}
+
+#box-3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#box-4 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+#box-4-flex {
+    display: flex;
+    align-items: center;
+}
+
+#ge-box,
+#sr-box {
+    width: 50%;
+    height: 35px;
+    margin: 6px 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--lgrey);
+    border-radius: 5px;
+}
+
+#ge-box {
+    margin-right: 10px;
+}
+
+#sr-box {
+    margin-left: 10px;
+}
+
+#ge-box:hover,
+#sr-box:hover {
+    border: 1px solid var(--dgreen);
+    background-color: var(--lgreen);
+}
+
+.radio {
+    margin: 0px 10px;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid var(--lgrey);
+    border-radius: 50%;
+}
+
+
+#box-5 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin: 6px 0px;
+    padding: 0px 8px;
+    border: 1px solid var(--lgrey);
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea:hover {
+    border: 1.3px solid var(--dgreen);
+}
+
+textarea:focus {
+    border: 1.3px solid var(--dgreen);
+}
+
+#consent-box {
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+#consent-box:hover {
+    cursor: default;
+}
+
+#consent {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--lgrey);
+    border-radius: 1px;
+}
+
+#consent-error {
+    margin: 6px 30px;
+}
+
+#submit-box {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: var(--dgreen);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid var(--lgrey);
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:hover {
+    border: 1.3px solid var(--dgreen);
+}
+
+input:focus {
+    border: 1.3px solid var(--dgreen);
+}
+
+sup {
+    margin-left: 5px;
+    font-size: 14px;
+    color: var(--dgreen);
+}
+
+#after-submit {
+    width: 80%;
+    max-width: 350px;
+    margin: 0px auto;
+    padding: 15px 0px;
+
+    background-color: var(--dgrey);
+    color: white;
+    border-radius: 10px;
+    opacity: 0.95;
+    z-index: 1;
+
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.5s ease;
+}
+
+#tick-h3 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#tick {
+    margin: 0px 15px 0px 20px;
+}
+
+p {
+    margin: 0px 20px;
+}
+
+/*Tablet design*/
+@media (max-width: 800px) {
+    body {
+        padding: 5vh 3%;
+    }
+}
+
+/*Mobile design*/
+@media (max-width: 550px) {
+    body {
+        padding: 3vh 3%;
+    }
+
+    #contact-form {
+        padding: 20px 0px;
+    }
+
+    h1 {
+        margin: 0px 20px;
+    }
+
+    #form-grid {
+        margin: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box-4-flex {
+        flex-direction: column;
+    }
+
+    #ge-box,
+    #sr-box {
+        width: 100%;
+        margin: 6px 0px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    sup {
+        margin-left: 3px;
+    }
+}
+
+/*Hover -- pointer*/
+button:hover,
+#ge-box:hover,
+#sr-box:hover {
+    cursor: pointer;
+}
+
+
+
+/*JS Part*/
+.error,
+#emailerr {
+    display: none;
+    font-size: 12px;
+    color: var(--red);
+}
+
+.radio-btns,
+#check-btn {
+    opacity: 0;
+}

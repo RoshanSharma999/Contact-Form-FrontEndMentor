@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FEM | Contact form</title>
+  <link rel="stylesheet" href="cntctForm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <form id="contact-form">
+
+    <h1>Contact Us</h1>
+
+    <div id="form-grid">
+
+      <div id="box-1">
+        <label>First Name <sup>*</sup></label>
+        <input type="text" id="fname">
+        <div class="error">This field is required</div>
+      </div>
+
+      <div id="box-2">
+        <label>Last Name <sup>*</sup></label>
+        <input type="text" id="lname">
+        <div class="error">This field is required</div>
+      </div>
+
+      <div id="box-3">
+        <label>Email Address <sup>*</sup></label>
+        <input>
+        <div id="emailerr">Please enter a valid email address</div>
+        <div class="error">This field is required</div>
+      </div>
+
+      <div id="box-4">
+        <label>Query Type <sup>*</sup></label>
+        <div id="box-4-flex">
+          <div id="ge-box">
+            <div class="radio"><img src="assets/images/icon-radio-selected.svg" class="radio-btns"></div>
+            <div id="general">General Enquiry</div>
+          </div>
+          <div id="sr-box">
+            <div class="radio"><img src="assets/images/icon-radio-selected.svg" class="radio-btns"></div>
+            <div id="support">Support Request</div>
+          </div>
+        </div>
+        <div class="error">Please select a query type</div>
+      </div>
+
+      <div id="box-5">
+        <label>Message <sup>*</sup></label>
+        <textarea></textarea>
+        <div class="error">This field is required</div>
+      </div>
+    </div>
+
+    <div id="consent-box">
+      <div id="consent"><img src="assets/images/icon-checkbox-check.svg" id="check-btn"></div>
+      <div>I consent to being contacted by the team</div>
+    </div>
+    <div class="error" id="consent-error">To submit this form, please consent to being contacted</div>
+
+    <div id="submit-box">
+      <button>Submit</button>
+    </div>
+
+  </form>
+
+  <div id="after-submit">
+    <div id="tick-h3">
+      <img src="assets/images/icon-success-check.svg" alt="success-tick" id="tick">
+      <h3>Message Sent!</h3>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <script src="cntctForm.js"></script>
+
+</body>
+
+</html>
